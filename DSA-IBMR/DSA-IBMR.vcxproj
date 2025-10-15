@@ -125,6 +125,7 @@
   <ItemGroup>
     <ClCompile Include="ex3.cpp" />
     <ClCompile Include="LinkedList.cpp" />
+    <ClCompile Include="SortMethods.cpp" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

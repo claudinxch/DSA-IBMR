@@ -2,6 +2,7 @@
 #include <stack>
 #include <string>
 #include "LinkedList.cpp"
+#include "SortMethods.cpp"
 
 bool isBalanced(const std::string& expression) {
 	std::stack<char> parenthesis;
@@ -78,5 +79,14 @@ int main() {
 	} while (option != 0);
 
 	list.freeList();
+
+	int arr[] = {2,1,4,3,7,5, 0};
+	int size = sizeof(arr) / sizeof(arr[0]);
+	SortMethods sort;
+	sort.InsertionSort(arr, size);
+	for (int n : arr)
+	{
+		std::cout << n << std::endl;
+	}
 	return 0;
 }
