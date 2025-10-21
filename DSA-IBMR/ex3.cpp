@@ -4,6 +4,8 @@
 #include "LinkedList.cpp"
 #include "SortMethods.cpp"
 
+#define ARRAY_SIZE 7
+
 bool isBalanced(const std::string& expression) {
 	std::stack<char> parenthesis;
 
@@ -80,10 +82,9 @@ int main() {
 
 	list.freeList();
 
-	int arr[] = {2,1,4,3,7,5, 0};
-	int size = sizeof(arr) / sizeof(arr[0]);
+	int arr[ARRAY_SIZE] = {2,1,4,3,7,5, 0};
 	SortMethods sort;
-	sort.InsertionSort(arr, size);
+	sort.QuickSort(arr, 0, ARRAY_SIZE - 1);
 	for (int n : arr)
 	{
 		std::cout << n << std::endl;
